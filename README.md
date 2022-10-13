@@ -33,4 +33,6 @@
 
 **Test results**
 
-![This is a alt text.](/TestsRun/TestsRun.png "This is a sample image.")
+<p align="center">
+  <img src="your_relative_path_here" width="350" title="hover text">
+</p>
