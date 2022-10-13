@@ -31,7 +31,7 @@ namespace Test_Assignment_3.DataAccess
             try
             {
                 await _dbContext.Bookings.AddAsync(booking);
-                await _dbContext.SaveChangesAsync();    
+                await _dbContext.SaveChangesAsync();
                 return true;
             }
             catch (Exception)
@@ -66,6 +66,11 @@ namespace Test_Assignment_3.DataAccess
                Include(_ => _.Employee).
                Where(_ => _.Employee.id == employeeId)
                .ToListAsync();
+        }
+
+        public void SendSms(Booking booking)
+        {
+            throw new NotImplementedException();
         }
     }
 }
