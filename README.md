@@ -31,7 +31,7 @@
 **Step 4: Right click on the test project and press "Run tests"**
 
 
-**Test results**
+***Test results***
 
 <p align="center">
   <img src="TestsRun/TestsRun.PNG" height="700" width="1300" title="hover text">
