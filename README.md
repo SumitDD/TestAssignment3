@@ -9,18 +9,11 @@
 
 **Step 1: Run the the command docker-compose up -d on the .yml file**
 
-├── ...
+    ├── ...
     ├── Docker-postgres
-    │   ├── docker-compose        
+    │   ├── docker-compose.yml        
     │   ├── ...       
     │   └── ...                
     └── ...
 
-```
-├── docker-compose
-├── Test Assignment 3
-├── Test
-├── README.md
-├── Test Assignment 3.sln
 
-```
