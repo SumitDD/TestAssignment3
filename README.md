@@ -7,7 +7,7 @@
 
 ### Setup
 
-**Step 1: Run the the command docker-compose up -d on both the .yml file**
+**Step 1: Run the the command docker-compose up -d on the .yml file**
 
 
 ```
