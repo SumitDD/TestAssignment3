@@ -9,12 +9,21 @@
 
 **Step 1: Run the the command docker-compose up -d on the .yml file**
 
+    ├── ...
+    ├── Docker-postgres
+    │   ├── docker-compose.yml        
+    │   ├── ...       
+    │   └── ...                
+    └── ...
 
+**Step 2: Open the project solution SiMiniProject2BPM.sin as shown below in the directory tree:**
 ```
-├── docker-compose
+├── Docker-postgres
 ├── Test Assignment 3
 ├── Test
 ├── README.md
 ├── Test Assignment 3.sln
-
 ```
+> :warning: Make sure that you use visual studio 2022 and not visual studio code
+> 
+**Step 3: Run the the program and the database will be automatically be created since migration is added**
