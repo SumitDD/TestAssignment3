@@ -16,7 +16,7 @@
     │   └── ...                
     └── ...
 
-**Step 2: Open the project solution SiMiniProject2BPM.sin as shown below in the directory tree:**
+**Step 2: Open the project solution Test Assignment 3.sin as shown below in the directory tree:**
 ```
 ├── Docker-postgres
 ├── Test Assignment 3
@@ -27,3 +27,10 @@
 > :warning: Make sure that you use visual studio 2022 and not visual studio code
 > 
 **Step 3: Run the the program and the database will be automatically be created since migration is added**
+
+**Step 4: Right click on the test project and press "Run tests"**
+
+
+**Test results**
+
+![This is a alt text.](/TestsRun/TestsRun.png "This is a sample image.")
