@@ -34,5 +34,5 @@
 **Test results**
 
 <p align="center">
-  <img src="../TestsRun/TestsRun.PNG" width="350" title="hover text">
+  <img src="TestsRun/TestsRun.PNG" width="350" title="hover text">
 </p>
