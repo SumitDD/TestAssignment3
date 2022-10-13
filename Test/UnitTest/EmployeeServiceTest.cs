@@ -19,7 +19,6 @@ namespace Test.UnitTest
         {
             _employeeStorageMock = new Mock<IEmployeeStorage>();
             _employeeService = new EmployeeService(_employeeStorageMock.Object);
-            
         }
 
         [Test]

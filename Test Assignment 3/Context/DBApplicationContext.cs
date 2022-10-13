@@ -20,7 +20,7 @@ namespace Test_Assignment_3.Context
         {
             //builder.Entity<Customer>().Property(u => u.Birthday).HasDefaultValue(DateTime.UtcNow);
             builder.Entity<Employee>().Property(_ => _.PhoneNumber).IsRequired(false);
-            builder.Entity<Customer>().HasData(new Customer { id = 1, FirstName = "SD", LastName = "DS", Birthday = DateTime.UtcNow });
+            //builder.Entity<Customer>().HasData(new Customer { id = 1, FirstName = "SD", LastName = "DS", Birthday = DateTime.UtcNow });
         }
     }
 }

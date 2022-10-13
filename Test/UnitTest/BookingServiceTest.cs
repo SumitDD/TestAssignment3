@@ -25,15 +25,21 @@ namespace Test.UnitTest
             _bookingStorageMock = new Mock<IBookingStorage>();
             _employeeStorageMock = new Mock<IEmployeeStorage>();
             _customerStorageMock = new Mock<ICustomerStorage>();
-            _bookingService = new BookingService(_bookingStorageMock.Object, _employeeStorageMock.Object, _customerStorageMock.Object);
-
+            _bookingService = new BookingService(
+                _bookingStorageMock.Object,
+                _employeeStorageMock.Object,
+                _customerStorageMock.Object);
         }
 
         [Test]
         public async Task CreateBooking_Should_Return_Booking()
         {
-            //
-            var newBooking = new CreateBookingDto { EmployeeId = 1, CustomerId = 2 };
+            //Arrange
+            var newBooking = new CreateBookingDto
+            {
+                EmployeeId = 1,
+                CustomerId = 2
+            };
             _bookingStorageMock.Setup(_ => _.CreateBooking(new Booking { })).ReturnsAsync(false);
 
             //Act

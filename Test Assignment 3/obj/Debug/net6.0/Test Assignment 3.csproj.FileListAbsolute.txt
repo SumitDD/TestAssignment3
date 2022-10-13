@@ -110,3 +110,6 @@ C:\Users\sumit\OneDrive\Skrivebord\2. semester softwareudvikling\Test Assignment
 C:\Users\sumit\OneDrive\Skrivebord\2. semester softwareudvikling\Test Assignment 3\Test Assignment 3\obj\Debug\net6.0\Test Assignment 3.csproj.CopyComplete
 C:\Users\sumit\OneDrive\Skrivebord\2. semester softwareudvikling\Test Assignment 3\Test Assignment 3\obj\Debug\net6.0\Test Assignment 3.genruntimeconfig.cache
 C:\Users\sumit\OneDrive\Skrivebord\2. semester softwareudvikling\Test Assignment 3\Test Assignment 3\obj\Debug\net6.0\ref\Test Assignment 3.dll
+C:\Users\phillip\Desktop\TestAssignment3\TestAssignment3\Test Assignment 3\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
+C:\Users\phillip\Desktop\TestAssignment3\TestAssignment3\Test Assignment 3\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\phillip\Desktop\TestAssignment3\TestAssignment3\Test Assignment 3\bin\Debug\net6.0\SQLitePCLRaw.core.dll
