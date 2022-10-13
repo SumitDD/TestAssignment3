@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Test_Assignment_3.Context;
@@ -11,9 +12,10 @@ using Test_Assignment_3.Context;
 namespace Test_Assignment_3.Migrations
 {
     [DbContext(typeof(DBApplicationContext))]
-    partial class DBApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20221013150917_MigrationWithPhoneNumber")]
+    partial class MigrationWithPhoneNumber
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

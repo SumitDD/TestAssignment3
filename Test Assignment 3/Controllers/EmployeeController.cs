@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Test_Assignment_3.Dto;
+using Test_Assignment_3.Services;
 
 namespace Test_Assignment_3.Controllers
 {
@@ -6,14 +8,17 @@ namespace Test_Assignment_3.Controllers
     [Route("[controller]")]
     public class EmployeeController : ControllerBase
     {
-        public EmployeeController()
+        private readonly IEmployeeService _employeeService; 
+
+        public EmployeeController(IEmployeeService employeeService)
         {
-            
+            _employeeService = employeeService;
         }
 
-        [HttpGet]
-        public void Get()
+        [HttpPost]
+        public async Task<bool> CreateEmployee(CreateEmployeeDto createEmployeeDto)
         {
+            return await _employeeService.CreateEmployee(createEmployeeDto);
         }
     }
 }

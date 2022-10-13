@@ -70,3 +70,5 @@ C:\Users\phillip\Desktop\TestAssignment3\TestAssignment3\Test Assignment 3\obj\D
 C:\Users\phillip\Desktop\TestAssignment3\TestAssignment3\Test Assignment 3\obj\Debug\net6.0\Test Assignment 3.csproj.CopyComplete
 C:\Users\phillip\Desktop\TestAssignment3\TestAssignment3\Test Assignment 3\obj\Debug\net6.0\refint\Test Assignment 3.dll
 C:\Users\phillip\Desktop\TestAssignment3\TestAssignment3\Test Assignment 3\obj\Debug\net6.0\Test Assignment 3.genruntimeconfig.cache
+C:\Users\phillip\Desktop\TestAssignment3\TestAssignment3\Test Assignment 3\bin\Debug\net6.0\libman.json
+C:\Users\phillip\Desktop\TestAssignment3\TestAssignment3\Test Assignment 3\bin\Debug\net6.0\Newtonsoft.Json.dll

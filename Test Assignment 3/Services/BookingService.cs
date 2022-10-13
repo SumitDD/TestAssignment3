@@ -1,12 +1,15 @@
 ﻿using Test_Assignment_3.Context;
 using Test_Assignment_3.DataAccess;
 using Test_Assignment_3.Dto;
+using Test_Assignment_3.Models;
 
 namespace Test_Assignment_3.Services
 {
     public interface IBookingService
     {
         public Task<bool> CreateBooking(CreateBookingDto createBookingDto);
+        public Task<List<Booking>> GetBookingsForCustomerId(int customerId);
+        public Task<List<Booking>> GetBookingsForEmployeeId(int employeeId);
     }
 
     public class BookingService : IBookingService
@@ -36,7 +39,7 @@ namespace Test_Assignment_3.Services
             try
             {
                 return await _bookingStorage.CreateBooking(
-                    new Models.Booking
+                    new Booking
                     {
                         Customer = await _customerStorage.GetCustomerById(createBookingDto.CustomerId),
                         Employee = await _employeeStorage.GetEmployeeById(createBookingDto.EmployeeId),
@@ -48,6 +51,22 @@ namespace Test_Assignment_3.Services
             {
                 return false;
             }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="customerId"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<List<Booking>> GetBookingsForCustomerId(int customerId)
+        {
+            return await _bookingStorage.GetBookingsForCustomerId(customerId);
+        }
+
+        public async Task<List<Booking>> GetBookingsForEmployeeId(int employeeId)
+        {
+           return await _bookingStorage.GetBookingsForEmployeeId(employeeId);   
         }
     }
 }

@@ -13,12 +13,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var configuration = builder.Configuration;
+
 builder.Services.AddScoped<IBookingStorage, BookingStorage>();
 builder.Services.AddScoped<ICustomerStorage, CustomerStorage>();
 builder.Services.AddScoped<IEmployeeStorage, EmployeeStorage>();
 builder.Services.AddScoped<IBookingService, BookingService>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
-builder.Services.AddDbContext<DBApplicationContext>(options => options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<DBApplicationContext>(options => 
+options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,17 +32,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 using (var scope = app.Services.CreateScope()) {
     var DB = scope.ServiceProvider.GetRequiredService<DBApplicationContext>();  
     DB.Database.Migrate();
     DB.Database.EnsureCreated();
 }
 
-
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
