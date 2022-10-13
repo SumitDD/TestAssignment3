@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Test_Assignment_3.Context;
+using Test_Assignment_3.DataAccess;
+using Test_Assignment_3.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var configuration = builder.Configuration;
+builder.Services.AddScoped<IBookingStorage, BookingStorage>();
+builder.Services.AddScoped<ICustomerStorage, CustomerStorage>();
+builder.Services.AddScoped<IEmployeeStorage, EmployeeStorage>();
+builder.Services.AddScoped<IBookingService, BookingService>();
+
 builder.Services.AddDbContext<DBApplicationContext>(options => options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
 

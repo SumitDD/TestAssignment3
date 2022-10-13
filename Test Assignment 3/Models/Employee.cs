@@ -6,7 +6,7 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime Birthday { get; set; }
+        public string? PhoneNumber { get; set; }
         public List<Booking>  Bookings { get; set; } = new List<Booking>();
-                
     }
 }

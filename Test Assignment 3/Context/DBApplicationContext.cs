@@ -8,7 +8,7 @@ namespace Test_Assignment_3.Context
         public DBApplicationContext(DbContextOptions<DBApplicationContext> options) : base(options) { }
 
         public DbSet<Customer> Customers { get; set; }
-        public DbSet<Employee> Users { get; set; }
+        public DbSet<Employee> Employee { get; set; }
         public DbSet<Booking> Bookings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
